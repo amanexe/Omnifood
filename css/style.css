@@ -1,6 +1,6 @@
-/*******************************/
-/* Header components */
-/*******************************/
+/**************************/
+/* HEADER */
+/**************************/
 
 .header {
   display: flex;
@@ -8,7 +8,7 @@
   align-items: center;
   background-color: #fdf2e9;
 
-  /*Because we want header to be sticky later  */
+  /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
 }
@@ -17,9 +17,9 @@
   height: 2.2rem;
 }
 
-/*******************************/
-/* Navigation section */
-/*******************************/
+/**************************/
+/* NAVIGATION */
+/**************************/
 
 .main-nav-list {
   list-style: none;
@@ -41,7 +41,6 @@
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #cf711f;
-  text-decoration: underline;
 }
 
 .main-nav-link.nav-cta:link,
@@ -57,9 +56,10 @@
   background-color: #cf711f;
 }
 
-/*******************************/
-/* Hero section */
-/*******************************/
+/**************************/
+/* HERO SECTION */
+/**************************/
+
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -67,17 +67,17 @@
 
 .hero {
   max-width: 130rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   padding: 0 3.2rem;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
+  align-items: center;
 }
 
 .hero-description {
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 4.8rem;
 }
 
@@ -87,9 +87,9 @@
 
 .delivered-meals {
   display: flex;
-  margin-top: 8rem;
   align-items: center;
   gap: 1.6rem;
+  margin-top: 8rem;
 }
 
 .delivered-imgs {
@@ -118,22 +118,12 @@
   font-weight: 700;
 }
 
-/*******************************/
-/* Featured in section */
-/*******************************/
+/**************************/
+/* FEATURED IN SECTION */
+/**************************/
 
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
-}
-.logos {
-  display: flex;
-  justify-content: space-around;
-}
-
-.logos img {
-  height: 3.2rem;
-  filter: brightness(0);
-  opacity: 50%;
 }
 
 .heading-featured-in {
@@ -145,9 +135,21 @@
   margin-bottom: 2.4rem;
   color: #888;
 }
-/*******************************/
-/* How it works section */
-/*******************************/
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/**************************/
+/* HOW IT WORKS SECTION */
+/**************************/
 
 .section-how {
   padding: 9.6rem 0;
@@ -162,10 +164,12 @@
 
 .step-description {
   font-size: 1.8rem;
+  line-height: 1.8;
 }
 
 .step-img-box {
   position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,20 +179,20 @@
 .step-img-box::after {
   content: "";
   display: block;
-
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .step-img-box::before {
   width: 60%;
-
   /* height: 60%; */
 
-  /*60% of parent's width  */
+  /* 60% of parent's width */
   padding-bottom: 60%;
+
   background-color: #fdf2e9;
   z-index: -2;
 }
@@ -202,26 +206,27 @@
 
 .step-img {
   width: 35%;
+  /* z-index: 10; */
 }
 
-/*******************************/
-/* Meals section */
-/*******************************/
+/**************************/
+/* MEALS SECTION */
+/**************************/
 
 .section-meals {
-  padding: 0;
+  padding: 9.6rem 0;
 }
 
 .meal {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
 }
 
 .meal:hover {
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
   transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .meal-content {
@@ -251,7 +256,7 @@
   background-color: #94d82d;
 }
 .tag--paleo {
-  background-color: #fcc419;
+  background-color: #ffd43b;
 }
 
 .meal-title {
@@ -290,9 +295,9 @@
   font-size: 1.8rem;
 }
 
-/*******************************/
-/* Testimonials section */
-/*******************************/
+/**************************/
+/* TESTIMONIALS SECTION */
+/**************************/
 
 .section-testimonials {
   background-color: #fdf2e9;
@@ -308,7 +313,8 @@
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
 }
 
 .testimonial-img {
@@ -321,8 +327,6 @@
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 1.6rem;
-  margin-left: 0px;
-  color: #333;
 }
 
 .testimonial-name {
@@ -351,43 +355,44 @@
   transform: scale(1.1);
 }
 
-/*******************************/
-/* Pricing section */
-/*******************************/
+/**************************/
+/* MEALS SECTION */
+/**************************/
 
 .section-pricing {
   padding: 9.6rem 0;
 }
 
-.pricing-plan {
-  background-color: #fdf2e9;
+.princing-plan {
   border-radius: 11px;
-  padding: 4.8rem;
+
   width: 75%;
 }
-.pricing-plan--starter {
+
+.princing-plan--starter {
   justify-self: end;
   border: 2px solid #fdf2e9;
   padding: 4.6rem;
-  background-color: #ddd;
 }
-.pricing-plan--complete {
+
+.princing-plan--complete {
   background-color: #fdf2e9;
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
 }
 
-.pricing-plan--complete::after {
+.princing-plan--complete::after {
   content: "Best value";
   position: absolute;
   top: 6%;
-  right: -14%;
+  right: -18%;
+
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
   color: #333;
-  background-color: #fcc419;
+  background-color: #ffd43b;
   padding: 0.8rem 8rem;
   transform: rotate(45deg);
 }
@@ -403,9 +408,11 @@
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
 }
+
 .plan-price {
-  font-size: 7.4rem;
+  font-size: 6.2rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 1.6rem;
@@ -418,12 +425,12 @@
 }
 
 .plan-text {
-  font-size: 1.8rem;
-  line-height: 1.8;
+  font-size: 1.6rem;
+  line-height: 1.6;
   color: #6f6f6f;
 }
 
-.plan-sign-up {
+.plan-sing-up {
   text-align: center;
   margin-top: 4.8rem;
 }
@@ -438,11 +445,12 @@
   color: #e67e22;
   height: 3.2rem;
   width: 3.2rem;
-  margin-bottom: 3.2rem;
   background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
   padding: 1.6rem;
   border-radius: 50%;
 }
+
 .feature-title {
   font-size: 2.4rem;
   color: #333;
@@ -455,31 +463,36 @@
   line-height: 1.8;
 }
 
-/*******************************/
-/* CTA section */
-/*******************************/
+/**************************/
+/* CTA SECTION */
+/**************************/
 
 .section-cta {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* top / horizontal / left */
   padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: #e67e22;
+  /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-  /* height: 50rem; */
   border-radius: 11px;
+
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
 }
 
 .cta-text-box {
-  padding: 0 6.4rem 6.4rem 6.4rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
   color: #45260a;
 }
 
 .cta .heading-secondary {
+  /* color: #45260a; */
   color: inherit;
   margin-bottom: 3.2rem;
 }
@@ -493,8 +506,8 @@
 .cta-img-box {
   background-image: linear-gradient(
       to right bottom,
-      rgba(235, 151, 78, 0.359),
-      rgba(230, 125, 34, 0.356)
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
     ),
     url("../img/eating.jpg");
   background-size: cover;
@@ -514,11 +527,11 @@
   font-weight: 500;
   margin-bottom: 1.2rem;
 }
+
 .cta-form input,
 .cta-form select {
   width: 100%;
-  /* min-width: 100%; */
-  padding: 1.2rem 0;
+  padding: 1.2rem;
   font-size: 1.8rem;
   font-family: inherit;
   color: inherit;
@@ -530,25 +543,20 @@
 
 .cta-form input::placeholder {
   color: #aaa;
-  padding: 1.2rem;
-}
-
-.cta-form select {
-}
-.cta-form button {
 }
 
 .cta *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.509);
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
-/*******************************/
-/* Footer section */
-/*******************************/
+/**************************/
+/* FOOTER */
+/**************************/
 
 .footer {
   padding: 12.8rem 0;
+  border-top: 1px solid #eee;
 }
 
 .grid--footer {
@@ -578,8 +586,8 @@
 
 .copyright {
   font-size: 1.4rem;
+  line-height: 1.6;
   color: #767676;
-  line-height: 1.6rem;
   margin-top: auto;
 }
 
@@ -587,7 +595,6 @@
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 4rem;
-  margin-top: 0;
 }
 
 .contacts {
@@ -600,19 +607,11 @@
   margin-bottom: 2.4rem;
 }
 
-.address-col {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  margin-bottom: auto;
-}
-
 .footer-nav {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  padding: 0;
 }
 
 .footer-link:link,
