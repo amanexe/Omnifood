@@ -11,6 +11,7 @@
   /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -20,6 +21,10 @@
 /**************************/
 /* NAVIGATION */
 /**************************/
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 
 .main-nav-list {
   list-style: none;
@@ -54,6 +59,21 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+/* Mobile
+ */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
 }
 
 /**************************/
